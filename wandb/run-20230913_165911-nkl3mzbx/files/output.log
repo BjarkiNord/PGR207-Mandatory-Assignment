@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\bjark\AppData\Local\Temp\ipykernel_25668\30544962.py", line 9, in model_pipeline
+    model, train_loader, test_loader, criterion, optimizer = make(config)
+  File "C:\Users\bjark\AppData\Local\Temp\ipykernel_25668\1837130125.py", line 9, in make
+    model = MLP(config.kernels, config.classes).to(device)
+  File "C:\Users\bjark\AppData\Local\Temp\ipykernel_25668\1585657174.py", line 3, in __init__
+    super(ConvNet, self).__init__()
+TypeError: super(type, obj): obj must be an instance or subtype of type

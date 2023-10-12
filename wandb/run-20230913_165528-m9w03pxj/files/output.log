@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\bjark\AppData\Local\Temp\ipykernel_30032\30544962.py", line 9, in model_pipeline
+    model, train_loader, test_loader, criterion, optimizer = make(config)
+  File "C:\Users\bjark\AppData\Local\Temp\ipykernel_30032\436828560.py", line 8, in make
+    model = Conv2DNet(config.kernels, config.classes).to(device)
+  File "C:\Users\bjark\AppData\Local\Temp\ipykernel_30032\1362191336.py", line 5, in __init__
+    super(ConvNet, self).__init__()
+NameError: name 'ConvNet' is not defined

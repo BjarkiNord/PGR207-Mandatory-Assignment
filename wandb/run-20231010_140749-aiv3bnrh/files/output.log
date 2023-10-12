@@ -1,0 +1,105 @@
+MLPv3(
+  (layer1): Sequential(
+    (0): Flatten(start_dim=1, end_dim=-1)
+    (1): Linear(in_features=784, out_features=128, bias=True)
+    (2): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): ReLU()
+  )
+  (layer2): Sequential(
+    (0): Linear(in_features=128, out_features=64, bias=True)
+    (1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+  )
+  (layer3): Sequential(
+    (0): Linear(in_features=64, out_features=32, bias=True)
+    (1): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+  )
+  (layer4): Sequential(
+    (0): Linear(in_features=32, out_features=16, bias=True)
+    (1): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): Tanh()
+  )
+  (layer5): Sequential(
+    (0): Linear(in_features=16, out_features=10, bias=True)
+  )
+)
+Loss after 03072 examples: 1.94531202
+Loss after 06272 examples: 1.66619873
+Loss after 09472 examples: 1.43716741
+Loss after 12640 examples: 1.22664857
+Loss after 15840 examples: 1.04262507
+Loss after 19040 examples: 0.89917260
+Loss after 22240 examples: 0.74020511
+Loss after 25408 examples: 0.61896259
+Loss after 28608 examples: 0.59605032
+Loss after 31808 examples: 0.51541507
+Loss after 35008 examples: 0.41903290
+Loss after 38176 examples: 0.36673141
+Loss after 41376 examples: 0.40281618
+Loss after 44576 examples: 0.33194819
+Loss after 47776 examples: 0.32436329
+Loss after 50944 examples: 0.21538964
+Loss after 54144 examples: 0.30743647
+Loss after 57344 examples: 0.22693866
+Loss after 60512 examples: 0.20698173
+Loss after 63712 examples: 0.21031262
+Loss after 66912 examples: 0.16670358
+Loss after 70112 examples: 0.16020639
+Loss after 73280 examples: 0.19203281
+Loss after 76480 examples: 0.18785878
+Loss after 79680 examples: 0.17176653
+Loss after 82880 examples: 0.17076941
+Loss after 86048 examples: 0.09165270
+Loss after 89248 examples: 0.16236030
+Loss after 92448 examples: 0.11280420
+Loss after 95648 examples: 0.08732476
+Loss after 98816 examples: 0.10700621
+Loss after 102016 examples: 0.06313495
+Loss after 105216 examples: 0.16138256
+Loss after 108384 examples: 0.12544936
+Loss after 111584 examples: 0.16729732
+Loss after 114784 examples: 0.08587039
+Loss after 117984 examples: 0.12712047
+Loss after 121152 examples: 0.07241472
+Loss after 124352 examples: 0.11029816
+Loss after 127552 examples: 0.16001207
+Loss after 130752 examples: 0.11168993
+Loss after 133920 examples: 0.07853583
+Loss after 137120 examples: 0.10297753
+Loss after 140320 examples: 0.07904169
+Loss after 143520 examples: 0.09356102
+Loss after 146688 examples: 0.18883266
+Loss after 149888 examples: 0.17714514
+Loss after 153088 examples: 0.16051090
+Loss after 156256 examples: 0.05633832
+Loss after 159456 examples: 0.05694318
+Loss after 162656 examples: 0.22697772
+Loss after 165856 examples: 0.09279783
+Loss after 169024 examples: 0.13284400
+Loss after 172224 examples: 0.03695581
+Loss after 175424 examples: 0.08873511
+Loss after 178624 examples: 0.12415653
+Loss after 181792 examples: 0.07145407
+Loss after 184992 examples: 0.09433281
+Loss after 188192 examples: 0.15041625
+Loss after 191392 examples: 0.09925692
+Loss after 194560 examples: 0.11021153
+Loss after 197760 examples: 0.07553178
+Loss after 200960 examples: 0.08210502
+Loss after 204128 examples: 0.07410270
+Loss after 207328 examples: 0.05806261
+Loss after 210528 examples: 0.10617644
+Loss after 213728 examples: 0.07663072
+Loss after 216896 examples: 0.03838669
+Loss after 220096 examples: 0.09187292
+Loss after 223296 examples: 0.01734297
+Loss after 226496 examples: 0.09899864
+Loss after 229664 examples: 0.01349096
+Loss after 232864 examples: 0.02502015
+Loss after 236064 examples: 0.12637624
+Loss after 239264 examples: 0.05798841
+Accuracy of the model on the 2000 test images: 95.750000%
+================ Diagnostic Run torch.onnx.export version 2.0.1 ================
+verbose: False, log level: Level.ERROR
+======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================

@@ -1,0 +1,29 @@
+ConvNet(
+  (layer1): Sequential(
+    (0): Conv2d(1, 16, kernel_size=(7, 7), stride=(1, 1), padding=(2, 2))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (layer2): Sequential(
+    (0): Conv2d(16, 32, kernel_size=(7, 7), stride=(1, 1), padding=(2, 2))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc): Linear(in_features=1568, out_features=10, bias=True)
+)
+Traceback (most recent call last):
+  File "C:\Users\bjark\AppData\Local\Temp\ipykernel_30724\30544962.py", line 13, in model_pipeline
+    train(model, train_loader, criterion, optimizer, config)
+  File "C:\Users\bjark\AppData\Local\Temp\ipykernel_30724\550994474.py", line 12, in train
+    loss = train_batch(images, labels, model, optimizer, criterion)
+  File "C:\Users\bjark\AppData\Local\Temp\ipykernel_30724\550994474.py", line 25, in train_batch
+    outputs = model(images)
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torch\nn\modules\module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "C:\Users\bjark\AppData\Local\Temp\ipykernel_30724\805769884.py", line 27, in forward
+    out = self.fc(out)  # Pass through the fully connected layer to get class scores
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torch\nn\modules\linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (128x800 and 1568x10)

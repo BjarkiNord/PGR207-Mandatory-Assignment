@@ -1,0 +1,40 @@
+MLP(
+  (layer1): Sequential(
+    (0): Flatten(start_dim=1, end_dim=-1)
+    (1): Linear(in_features=784, out_features=64, bias=True)
+    (2): Sigmoid()
+  )
+  (layer2): Sequential(
+    (0): Linear(in_features=64, out_features=32, bias=True)
+    (1): Sigmoid()
+  )
+  (layer3): Sequential(
+    (0): Linear(in_features=32, out_features=16, bias=True)
+    (1): Sigmoid()
+  )
+  (layer4): Sequential(
+    (0): Linear(in_features=16, out_features=10, bias=True)
+  )
+)
+Loss after 03072 examples: 2.297
+Loss after 06272 examples: 2.169
+Loss after 09472 examples: 1.947
+Loss after 12640 examples: 1.745
+Loss after 15840 examples: 1.506
+Loss after 19040 examples: 1.324
+Loss after 22240 examples: 1.246
+Loss after 25408 examples: 1.136
+Loss after 28608 examples: 1.111
+Loss after 31808 examples: 1.113
+Loss after 35008 examples: 0.950
+Loss after 38176 examples: 0.824
+Loss after 41376 examples: 0.791
+Loss after 44576 examples: 0.660
+Loss after 47776 examples: 0.671
+Loss after 50944 examples: 0.632
+Loss after 54144 examples: 0.586
+Loss after 57344 examples: 0.494
+Accuracy of the model on the 2000 test images: 87.050000%
+================ Diagnostic Run torch.onnx.export version 2.0.1 ================
+verbose: False, log level: Level.ERROR
+======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================

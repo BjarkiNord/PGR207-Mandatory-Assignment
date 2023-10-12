@@ -1,0 +1,49 @@
+ConvNet(
+  (layer1): Sequential(
+    (0): Conv2d(1, 16, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (layer2): Sequential(
+    (0): Conv2d(16, 32, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc): Linear(in_features=1568, out_features=10, bias=True)
+)
+Loss after 03072 examples: 0.553
+Loss after 06272 examples: 0.255
+Loss after 09472 examples: 0.229
+Loss after 12640 examples: 0.117
+Loss after 15840 examples: 0.128
+Loss after 19040 examples: 0.074
+Loss after 22240 examples: 0.070
+Loss after 25408 examples: 0.073
+Loss after 28608 examples: 0.018
+Loss after 31808 examples: 0.024
+Loss after 35008 examples: 0.056
+Loss after 38176 examples: 0.019
+Loss after 41376 examples: 0.060
+Loss after 44576 examples: 0.037
+Loss after 47776 examples: 0.105
+Loss after 50944 examples: 0.033
+Loss after 54144 examples: 0.017
+Loss after 57344 examples: 0.038
+Traceback (most recent call last):
+  File "C:\Users\bjark\AppData\Local\Temp\ipykernel_29196\30544962.py", line 16, in model_pipeline
+    test(model, test_loader)
+  File "C:\Users\bjark\AppData\Local\Temp\ipykernel_29196\418148050.py", line 21, in test
+    wandb.save("model.onnx")
+  File "C:\Users\bjark\anaconda3\lib\site-packages\wandb\sdk\wandb_run.py", line 370, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\bjark\anaconda3\lib\site-packages\wandb\sdk\wandb_run.py", line 360, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\bjark\anaconda3\lib\site-packages\wandb\sdk\wandb_run.py", line 1824, in save
+    return self._save(glob_str, base_path, policy)
+  File "C:\Users\bjark\anaconda3\lib\site-packages\wandb\sdk\wandb_run.py", line 1878, in _save
+    os.symlink(abs_path, wandb_path)
+OSError: [WinError 1314] Klienten har ikke nødvendig tilgangsnivå: 'C:\\Users\\bjark\\5-semester\\PGR207\\Mandatory Assignment\\model.onnx' -> 'C:\\Users\\bjark\\5-semester\\PGR207\\Mandatory Assignment\\wandb\\run-20230913_164715-qiokgpmn\\files\\model.onnx'
+Accuracy of the model on the 2000 test images: 98.100000%
+================ Diagnostic Run torch.onnx.export version 2.0.1 ================
+verbose: False, log level: Level.ERROR
+======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================

@@ -1,0 +1,100 @@
+Conv1DNet(
+  (layer1): Sequential(
+    (0): Conv2d(1, 16, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (layer2): Sequential(
+    (0): Conv2d(16, 32, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (1): ReLU()
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc): Linear(in_features=1568, out_features=10, bias=True)
+)
+Loss after 03072 examples: 0.753
+Loss after 06272 examples: 0.185
+Loss after 09472 examples: 0.077
+Loss after 12640 examples: 0.169
+Loss after 15840 examples: 0.090
+Loss after 19040 examples: 0.091
+Loss after 22240 examples: 0.125
+Loss after 25408 examples: 0.130
+Loss after 28608 examples: 0.036
+Loss after 31808 examples: 0.085
+Loss after 35008 examples: 0.056
+Loss after 38176 examples: 0.096
+Loss after 41376 examples: 0.042
+Loss after 44576 examples: 0.031
+Loss after 47776 examples: 0.090
+Loss after 50944 examples: 0.041
+Loss after 54144 examples: 0.018
+Loss after 57344 examples: 0.012
+Loss after 60512 examples: 0.011
+Loss after 63712 examples: 0.012
+Loss after 66912 examples: 0.013
+Loss after 70112 examples: 0.105
+Loss after 73280 examples: 0.048
+Loss after 76480 examples: 0.005
+Loss after 79680 examples: 0.011
+Loss after 82880 examples: 0.092
+Loss after 86048 examples: 0.018
+Loss after 89248 examples: 0.013
+Loss after 92448 examples: 0.007
+Loss after 95648 examples: 0.002
+Loss after 98816 examples: 0.009
+Loss after 102016 examples: 0.008
+Loss after 105216 examples: 0.003
+Loss after 108384 examples: 0.004
+Loss after 111584 examples: 0.018
+Loss after 114784 examples: 0.002
+Loss after 117984 examples: 0.117
+Loss after 121152 examples: 0.084
+Loss after 124352 examples: 0.016
+Loss after 127552 examples: 0.004
+Loss after 130752 examples: 0.005
+Loss after 133920 examples: 0.001
+Loss after 137120 examples: 0.009
+Loss after 140320 examples: 0.003
+Loss after 143520 examples: 0.005
+Loss after 146688 examples: 0.008
+Loss after 149888 examples: 0.003
+Loss after 153088 examples: 0.002
+Loss after 156256 examples: 0.011
+Loss after 159456 examples: 0.005
+Loss after 162656 examples: 0.019
+Loss after 165856 examples: 0.002
+Loss after 169024 examples: 0.001
+Loss after 172224 examples: 0.004
+Loss after 175424 examples: 0.007
+Loss after 178624 examples: 0.000
+Loss after 181792 examples: 0.001
+Loss after 184992 examples: 0.000
+Loss after 188192 examples: 0.002
+Loss after 191392 examples: 0.002
+Loss after 194560 examples: 0.000
+Loss after 197760 examples: 0.000
+Loss after 200960 examples: 0.000
+Traceback (most recent call last):
+  File "C:\Users\bjark\AppData\Local\Temp\ipykernel_21396\30544962.py", line 13, in model_pipeline
+    train(model, train_loader, criterion, optimizer, config)
+  File "C:\Users\bjark\AppData\Local\Temp\ipykernel_21396\2177316483.py", line 10, in train
+    for _, (images, labels) in enumerate(loader):
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 1328, in _next_data
+    idx, data = self._get_data()
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 1294, in _get_data
+    success, data = self._try_get_data()
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 1132, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "C:\Users\bjark\anaconda3\lib\multiprocessing\queues.py", line 113, in get
+    if not self._poll(timeout):
+  File "C:\Users\bjark\anaconda3\lib\multiprocessing\connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "C:\Users\bjark\anaconda3\lib\multiprocessing\connection.py", line 330, in _poll
+    return bool(wait([self], timeout))
+  File "C:\Users\bjark\anaconda3\lib\multiprocessing\connection.py", line 879, in wait
+    ready_handles = _exhaustive_wait(waithandle_to_obj.keys(), timeout)
+  File "C:\Users\bjark\anaconda3\lib\multiprocessing\connection.py", line 811, in _exhaustive_wait
+    res = _winapi.WaitForMultipleObjects(L, False, timeout)
+KeyboardInterrupt

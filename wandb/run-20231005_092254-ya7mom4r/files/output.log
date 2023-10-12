@@ -1,0 +1,184 @@
+MLPv3(
+  (layer1): Sequential(
+    (0): Flatten(start_dim=1, end_dim=-1)
+    (1): Linear(in_features=784, out_features=128, bias=True)
+    (2): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): ReLU()
+    (4): Dropout(p=0.1, inplace=False)
+  )
+  (layer2): Sequential(
+    (0): Linear(in_features=128, out_features=64, bias=True)
+    (1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+  )
+  (layer3): Sequential(
+    (0): Linear(in_features=64, out_features=32, bias=True)
+    (1): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+  )
+  (layer4): Sequential(
+    (0): Linear(in_features=32, out_features=16, bias=True)
+    (1): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): Sigmoid()
+    (3): Dropout(p=0.1, inplace=False)
+  )
+  (layer5): Sequential(
+    (0): Linear(in_features=16, out_features=10, bias=True)
+  )
+)
+Loss after 01536 examples: 1.96537733
+Loss after 03136 examples: 1.93300211
+Loss after 04736 examples: 1.64492285
+Loss after 06336 examples: 1.54172671
+Loss after 07936 examples: 1.30016696
+Loss after 09536 examples: 1.27762628
+Loss after 11136 examples: 1.02318597
+Loss after 12704 examples: 0.97936046
+Loss after 14304 examples: 0.87095106
+Loss after 15904 examples: 0.78208077
+Loss after 17504 examples: 0.69769365
+Loss after 19104 examples: 0.71481180
+Loss after 20704 examples: 0.60050476
+Loss after 22304 examples: 0.53790098
+Loss after 23904 examples: 0.46687669
+Loss after 25472 examples: 0.53676707
+Loss after 27072 examples: 0.44392315
+Loss after 28672 examples: 0.40505308
+Loss after 30272 examples: 0.43864313
+Loss after 31872 examples: 0.47136566
+Loss after 33472 examples: 0.46201429
+Loss after 35072 examples: 0.27638891
+Loss after 36640 examples: 0.36185381
+Loss after 38240 examples: 0.39904428
+Loss after 39840 examples: 0.31474248
+Loss after 41440 examples: 0.45516500
+Loss after 43040 examples: 0.38822043
+Loss after 44640 examples: 0.28682503
+Loss after 46240 examples: 0.17396449
+Loss after 47840 examples: 0.30297142
+Loss after 49408 examples: 0.19645646
+Loss after 51008 examples: 0.47079971
+Loss after 52608 examples: 0.21175350
+Loss after 54208 examples: 0.51782393
+Loss after 55808 examples: 0.27791834
+Loss after 57408 examples: 0.16210079
+Loss after 59008 examples: 0.25293288
+Loss after 60576 examples: 0.48330358
+Loss after 62176 examples: 0.34952164
+Loss after 63776 examples: 0.27242616
+Loss after 65376 examples: 0.18220529
+Loss after 66976 examples: 0.28892079
+Loss after 68576 examples: 0.39618436
+Loss after 70176 examples: 0.19109118
+Loss after 71776 examples: 0.41491669
+Loss after 73344 examples: 0.20097247
+Loss after 74944 examples: 0.22583322
+Loss after 76544 examples: 0.37285033
+Loss after 78144 examples: 0.24592423
+Loss after 79744 examples: 0.15611711
+Loss after 81344 examples: 0.36648417
+Loss after 82944 examples: 0.29964021
+Loss after 84512 examples: 0.17765576
+Loss after 86112 examples: 0.25850284
+Loss after 87712 examples: 0.17949569
+Loss after 89312 examples: 0.15808436
+Loss after 90912 examples: 0.29262397
+Loss after 92512 examples: 0.34324521
+Loss after 94112 examples: 0.11527970
+Loss after 95712 examples: 0.23218691
+Loss after 97280 examples: 0.36790815
+Loss after 98880 examples: 0.17714263
+Loss after 100480 examples: 0.26530862
+Loss after 102080 examples: 0.26547575
+Loss after 103680 examples: 0.29185155
+Loss after 105280 examples: 0.37262210
+Loss after 106880 examples: 0.19291364
+Loss after 108448 examples: 0.34711343
+Loss after 110048 examples: 0.38060385
+Loss after 111648 examples: 0.09099417
+Loss after 113248 examples: 0.19426957
+Loss after 114848 examples: 0.06719352
+Loss after 116448 examples: 0.18371212
+Loss after 118048 examples: 0.23101126
+Loss after 119648 examples: 0.42366806
+Loss after 121216 examples: 0.14965269
+Loss after 122816 examples: 0.16024785
+Loss after 124416 examples: 0.26041952
+Loss after 126016 examples: 0.08361203
+Loss after 127616 examples: 0.28092000
+Loss after 129216 examples: 0.07486287
+Loss after 130816 examples: 0.19405431
+Loss after 132384 examples: 0.09606010
+Loss after 133984 examples: 0.21371211
+Loss after 135584 examples: 0.20480423
+Loss after 137184 examples: 0.16801944
+Loss after 138784 examples: 0.19655162
+Loss after 140384 examples: 0.14907090
+Loss after 141984 examples: 0.22410125
+Loss after 143584 examples: 0.24846764
+Loss after 145152 examples: 0.08516125
+Loss after 146752 examples: 0.18640086
+Loss after 148352 examples: 0.04381530
+Loss after 149952 examples: 0.22213809
+Loss after 151552 examples: 0.11303566
+Loss after 153152 examples: 0.33559051
+Loss after 154752 examples: 0.15821952
+Loss after 156320 examples: 0.14767730
+Loss after 157920 examples: 0.09820993
+Loss after 159520 examples: 0.08662769
+Loss after 161120 examples: 0.04278873
+Loss after 162720 examples: 0.22678603
+Loss after 164320 examples: 0.34527582
+Loss after 165920 examples: 0.19457366
+Loss after 167520 examples: 0.24796246
+Loss after 169088 examples: 0.05336658
+Loss after 170688 examples: 0.41945931
+Loss after 172288 examples: 0.08596378
+Loss after 173888 examples: 0.21012026
+Loss after 175488 examples: 0.19159181
+Loss after 177088 examples: 0.11935144
+Loss after 178688 examples: 0.27626982
+Loss after 180256 examples: 0.15401518
+Loss after 181856 examples: 0.08971559
+Loss after 183456 examples: 0.03766322
+Loss after 185056 examples: 0.08648842
+Loss after 186656 examples: 0.04324698
+Loss after 188256 examples: 0.16258548
+Loss after 189856 examples: 0.07234309
+Loss after 191456 examples: 0.30153841
+Loss after 193024 examples: 0.18675466
+Loss after 194624 examples: 0.11714939
+Loss after 196224 examples: 0.09132872
+Loss after 197824 examples: 0.19128232
+Loss after 199424 examples: 0.09470084
+Loss after 201024 examples: 0.18416291
+Loss after 202624 examples: 0.04286605
+Loss after 204192 examples: 0.12917817
+Loss after 205792 examples: 0.21384963
+Loss after 207392 examples: 0.25758061
+Loss after 208992 examples: 0.11400814
+Loss after 210592 examples: 0.05290646
+Loss after 212192 examples: 0.06639175
+Loss after 213792 examples: 0.17828363
+Loss after 215392 examples: 0.22216690
+Loss after 216960 examples: 0.10301609
+Loss after 218560 examples: 0.08077420
+Loss after 220160 examples: 0.14944121
+Loss after 221760 examples: 0.16173564
+Loss after 223360 examples: 0.31510860
+Loss after 224960 examples: 0.03852928
+Loss after 226560 examples: 0.15116914
+Loss after 228128 examples: 0.16526154
+Loss after 229728 examples: 0.12314602
+Loss after 231328 examples: 0.06808747
+Loss after 232928 examples: 0.12106294
+Loss after 234528 examples: 0.20354693
+Loss after 236128 examples: 0.20922938
+Loss after 237728 examples: 0.07078511
+Loss after 239328 examples: 0.08938262
+Accuracy of the model on the 2000 test images: 96.600000%
+================ Diagnostic Run torch.onnx.export version 2.0.1 ================
+verbose: False, log level: Level.ERROR
+======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================

@@ -1,0 +1,58 @@
+MLPv3(
+  (layer1): Sequential(
+    (0): Flatten(start_dim=1, end_dim=-1)
+    (1): Linear(in_features=784, out_features=128, bias=True)
+    (2): BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): ReLU()
+  )
+  (layer2): Sequential(
+    (0): Linear(in_features=128, out_features=64, bias=True)
+    (1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+  )
+  (layer3): Sequential(
+    (0): Linear(in_features=64, out_features=32, bias=True)
+    (1): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+  )
+  (layer4): Sequential(
+    (0): Linear(in_features=32, out_features=16, bias=True)
+    (1): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+  )
+  (layer5): Sequential(
+    (0): Linear(in_features=16, out_features=10, bias=True)
+  )
+)
+Traceback (most recent call last):
+  File "C:\Users\bjark\AppData\Local\Temp\ipykernel_31064\30544962.py", line 13, in model_pipeline
+    train(model, train_loader, criterion, optimizer, config)
+  File "C:\Users\bjark\AppData\Local\Temp\ipykernel_31064\550994474.py", line 10, in train
+    for _, (images, labels) in enumerate(loader):
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 1345, in _next_data
+    return self._process_data(data)
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torch\utils\data\dataloader.py", line 1371, in _process_data
+    data.reraise()
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torch\_utils.py", line 644, in reraise
+    raise exception
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torch\utils\data\_utils\worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torch\utils\data\dataset.py", line 298, in __getitem__
+    return self.dataset[self.indices[idx]]
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torchvision\datasets\mnist.py", line 145, in __getitem__
+    img = self.transform(img)
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torchvision\transforms\transforms.py", line 95, in __call__
+    img = t(img)
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torchvision\transforms\transforms.py", line 234, in __call__
+    return F.to_pil_image(pic, self.mode)
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torchvision\transforms\functional.py", line 262, in to_pil_image
+    raise TypeError(f"pic should be Tensor or ndarray. Got {type(pic)}.")
+TypeError: pic should be Tensor or ndarray. Got <class 'PIL.Image.Image'>.

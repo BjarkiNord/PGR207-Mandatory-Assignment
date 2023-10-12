@@ -1,0 +1,39 @@
+Conv1DNet(
+  (layer1): Sequential(
+    (0): Conv1d(1, 16, kernel_size=(5,), stride=(1,), padding=(2,))
+    (1): ReLU()
+    (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (layer2): Sequential(
+    (0): Conv1d(16, 32, kernel_size=(5,), stride=(1,), padding=(2,))
+    (1): ReLU()
+    (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc): Linear(in_features=6272, out_features=10, bias=True)
+)
+Loss after 03072 examples: 0.422
+Loss after 06272 examples: 0.287
+Loss after 09472 examples: 0.182
+Loss after 12640 examples: 0.151
+Loss after 15840 examples: 0.223
+Loss after 19040 examples: 0.147
+Loss after 22240 examples: 0.167
+Loss after 25408 examples: 0.171
+Loss after 28608 examples: 0.148
+Loss after 31808 examples: 0.191
+Loss after 35008 examples: 0.124
+Loss after 38176 examples: 0.073
+Traceback (most recent call last):
+  File "C:\Users\bjark\AppData\Local\Temp\ipykernel_1604\30544962.py", line 13, in model_pipeline
+    train(model, train_loader, criterion, optimizer, config)
+  File "C:\Users\bjark\AppData\Local\Temp\ipykernel_1604\550994474.py", line 12, in train
+    loss = train_batch(images, labels, model, optimizer, criterion)
+  File "C:\Users\bjark\AppData\Local\Temp\ipykernel_1604\550994474.py", line 30, in train_batch
+    loss.backward()
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torch\_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "C:\Users\bjark\anaconda3\lib\site-packages\torch\autograd\__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "C:\Users\bjark\anaconda3\lib\site-packages\wandb\wandb_torch.py", line 266, in <lambda>
+    handle = var.register_hook(lambda grad: _callback(grad, log_track))
+KeyboardInterrupt

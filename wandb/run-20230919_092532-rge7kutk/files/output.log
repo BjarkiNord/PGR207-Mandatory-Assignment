@@ -1,0 +1,46 @@
+MLP(
+  (layer1): Sequential(
+    (0): Flatten(start_dim=1, end_dim=-1)
+    (1): Linear(in_features=784, out_features=64, bias=True)
+    (2): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): ReLU()
+    (4): Dropout(p=0.5, inplace=False)
+  )
+  (layer2): Sequential(
+    (0): Linear(in_features=64, out_features=32, bias=True)
+    (1): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+  )
+  (layer3): Sequential(
+    (0): Linear(in_features=32, out_features=16, bias=True)
+    (1): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): Dropout(p=0.5, inplace=False)
+  )
+  (layer4): Sequential(
+    (0): Linear(in_features=16, out_features=10, bias=True)
+  )
+)
+Loss after 03072 examples: 2.021
+Loss after 06272 examples: 1.851
+Loss after 09472 examples: 1.601
+Loss after 12640 examples: 1.414
+Loss after 15840 examples: 1.362
+Loss after 19040 examples: 1.405
+Loss after 22240 examples: 1.321
+Loss after 25408 examples: 1.402
+Loss after 28608 examples: 1.187
+Loss after 31808 examples: 1.263
+Loss after 35008 examples: 1.071
+Loss after 38176 examples: 1.007
+Loss after 41376 examples: 1.137
+Loss after 44576 examples: 1.202
+Loss after 47776 examples: 1.123
+Loss after 50944 examples: 1.087
+Loss after 54144 examples: 0.951
+Loss after 57344 examples: 0.914
+Accuracy of the model on the 2000 test images: 89.800000%
+================ Diagnostic Run torch.onnx.export version 2.0.1 ================
+verbose: False, log level: Level.ERROR
+======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================

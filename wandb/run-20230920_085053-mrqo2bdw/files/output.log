@@ -1,0 +1,92 @@
+Conv1DNet(
+  (layer1): Sequential(
+    (0): Conv1d(1, 16, kernel_size=(5,), stride=(1,), padding=(2,))
+    (1): ReLU()
+    (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (layer2): Sequential(
+    (0): Conv1d(16, 32, kernel_size=(5,), stride=(1,), padding=(2,))
+    (1): ReLU()
+    (2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc): Linear(in_features=6272, out_features=10, bias=True)
+)
+Loss after 03072 examples: 0.39891377
+Loss after 06272 examples: 0.37700504
+Loss after 09472 examples: 0.32201627
+Loss after 12640 examples: 0.09332042
+Loss after 15840 examples: 0.21016222
+Loss after 19040 examples: 0.19990590
+Loss after 22240 examples: 0.15958463
+Loss after 25408 examples: 0.08547387
+Loss after 28608 examples: 0.16447543
+Loss after 31808 examples: 0.24171583
+Loss after 35008 examples: 0.14014074
+Loss after 38176 examples: 0.08038506
+Loss after 41376 examples: 0.09497321
+Loss after 44576 examples: 0.08308906
+Loss after 47776 examples: 0.08678591
+Loss after 50944 examples: 0.08897714
+Loss after 54144 examples: 0.13032398
+Loss after 57344 examples: 0.05209267
+Loss after 60512 examples: 0.04665336
+Loss after 63712 examples: 0.04741323
+Loss after 66912 examples: 0.07989051
+Loss after 70112 examples: 0.05701212
+Loss after 73280 examples: 0.04421334
+Loss after 76480 examples: 0.07117162
+Loss after 79680 examples: 0.06239999
+Loss after 82880 examples: 0.04292021
+Loss after 86048 examples: 0.03437003
+Loss after 89248 examples: 0.02703178
+Loss after 92448 examples: 0.11730711
+Loss after 95648 examples: 0.03793262
+Loss after 98816 examples: 0.01458658
+Loss after 102016 examples: 0.04940750
+Loss after 105216 examples: 0.04984130
+Loss after 108384 examples: 0.05480891
+Loss after 111584 examples: 0.02220125
+Loss after 114784 examples: 0.11314898
+Loss after 117984 examples: 0.07217917
+Loss after 121152 examples: 0.08795038
+Loss after 124352 examples: 0.04713105
+Loss after 127552 examples: 0.08632497
+Loss after 130752 examples: 0.02790399
+Loss after 133920 examples: 0.01855703
+Loss after 137120 examples: 0.00337716
+Loss after 140320 examples: 0.02247252
+Loss after 143520 examples: 0.04367892
+Loss after 146688 examples: 0.00883479
+Loss after 149888 examples: 0.04746696
+Loss after 153088 examples: 0.01436241
+Loss after 156256 examples: 0.02142668
+Loss after 159456 examples: 0.01145064
+Loss after 162656 examples: 0.00419106
+Loss after 165856 examples: 0.01010989
+Loss after 169024 examples: 0.00420642
+Loss after 172224 examples: 0.00229653
+Loss after 175424 examples: 0.00819844
+Loss after 178624 examples: 0.00871273
+Loss after 181792 examples: 0.00971196
+Loss after 184992 examples: 0.02020648
+Loss after 188192 examples: 0.02991680
+Loss after 191392 examples: 0.03222023
+Loss after 194560 examples: 0.01400395
+Loss after 197760 examples: 0.01243141
+Loss after 200960 examples: 0.02409711
+Loss after 204128 examples: 0.00229883
+Loss after 207328 examples: 0.03692391
+Loss after 210528 examples: 0.01347307
+Loss after 213728 examples: 0.00914854
+Loss after 216896 examples: 0.00518037
+Loss after 220096 examples: 0.00368123
+Loss after 223296 examples: 0.01047755
+Loss after 226496 examples: 0.00387944
+Loss after 229664 examples: 0.00125772
+Loss after 232864 examples: 0.00435100
+Loss after 236064 examples: 0.00031751
+Loss after 239264 examples: 0.00051902
+Accuracy of the model on the 2000 test images: 95.650000%
+================ Diagnostic Run torch.onnx.export version 2.0.1 ================
+verbose: False, log level: Level.ERROR
+======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================
